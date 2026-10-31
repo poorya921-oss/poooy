@@ -32,7 +32,7 @@ android {
         ndkBuild { path = file("src/main/jni/Android.mk") }
     }
 
-    androidResources { localeFilters += "en" }
+    
 
     buildTypes {
         release {
