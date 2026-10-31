@@ -60,12 +60,20 @@ object XrayCore {
     }
 
     /** Bytes since the previous call (the core resets the counter on read). tag = "proxy", direction = "uplink" | "downlink". */
+    
     fun queryTraffic(tag: String, direction: String): Long =
         try {
-            controller?.queryStats(tag, direction) ?: 0L
+            val c = controller ?: return 0L
+
+            val method = c.javaClass.methods.firstOrNull {
+                it.name == "queryStats" && it.parameterTypes.size == 2
+            } ?: return 0L
+
+            (method.invoke(c, tag, direction) as? Number)?.toLong() ?: 0L
         } catch (ignored: Exception) {
             0L
         }
+
 
     /** Round-trip time in ms through the given outbound config, or throws. Blocking. */
     fun measureDelay(configJson: String, url: String): Long = Libv2ray.measureOutboundDelay(configJson, url)
