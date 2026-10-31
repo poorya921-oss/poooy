@@ -1,0 +1,13 @@
+*.iml
+.gradle/
+local.properties
+.idea/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+# fetched by scripts/fetch-deps.*
+app/libs/libv2ray.aar
+app/src/main/jni/hev-socks5-tunnel/
