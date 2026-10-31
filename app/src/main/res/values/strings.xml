@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">POOOY</string>
+    <string name="notif_channel">VPN status</string>
+
+    <string name="state_disconnected">Disconnected</string>
+    <string name="state_connecting">Connecting…</string>
+    <string name="state_connected">Connected</string>
+    <string name="notif_connecting">Connecting…</string>
+    <string name="notif_connected">Connected to %1$s</string>
+    <string name="btn_connect">CONNECT</string>
+    <string name="btn_disconnect">DISCONNECT</string>
+    <string name="notif_action_disconnect">Disconnect</string>
+    <string name="no_server">No server selected</string>
+
+    <string name="configs_title">Configurations</string>
+    <string name="empty_hint">No configurations yet. Tap + to paste a link, scan a QR code, import a file or add a subscription.</string>
+    <string name="invalid_config">Invalid configuration</string>
+    <string name="latency_timeout">timeout</string>
+
+    <string name="cd_add">Add configuration</string>
+    <string name="cd_more">More options</string>
+    <string name="menu_paste">Paste from clipboard</string>
+    <string name="menu_scan">Scan QR code</string>
+    <string name="menu_url">Import from URL</string>
+    <string name="menu_file">Import from file</string>
+    <string name="menu_manual">Add manually</string>
+    <string name="menu_test_all">Test all latencies</string>
+    <string name="menu_update_subs">Update subscriptions</string>
+    <string name="menu_subs">Manage subscriptions</string>
+
+    <string name="act_test">Test latency</string>
+    <string name="act_edit">Edit</string>
+    <string name="act_rename">Rename</string>
+    <string name="act_duplicate">Duplicate</string>
+    <string name="act_delete">Delete</string>
+    <string name="act_cancel">Cancel</string>
+    <string name="act_save">Save</string>
+    <string name="act_import">Import</string>
+    <string name="act_close">Close</string>
+    <string name="act_update">Update</string>
+
+    <string name="title_add_manual">Add configuration</string>
+    <string name="title_edit">Edit configuration</string>
+    <string name="title_rename">Rename</string>
+    <string name="title_import_url">Import from URL</string>
+    <string name="title_subs">Subscriptions</string>
+    <string name="title_delete_profile">Delete configuration?</string>
+    <string name="title_delete_sub">Delete subscription?</string>
+
+    <string name="field_name">Name</string>
+    <string name="field_name_optional">Name (optional)</string>
+    <string name="field_link">Link or JSON config</string>
+    <string name="field_url">URL (https)</string>
+    <string name="save_as_sub">Save as subscription (can be updated later)</string>
+    <string name="body_delete_profile">“%1$s” will be removed.</string>
+    <string name="body_delete_sub">“%1$s” and every configuration imported from it will be removed.</string>
+    <string name="subs_empty">No subscriptions yet.</string>
+
+    <string name="msg_no_profile">Add and select a configuration first.</string>
+    <string name="msg_clipboard_empty">Nothing to import: the clipboard is empty.</string>
+    <string name="msg_imported">Imported %1$d configuration(s).</string>
+    <string name="msg_imported_skipped">Imported %1$d, skipped %2$d unsupported or invalid entries.</string>
+    <string name="msg_nothing_imported">Nothing imported (%1$d unsupported or invalid entries).</string>
+    <string name="msg_sub_updated">Subscription updated.</string>
+    <string name="msg_subs_updated">Subscriptions updated: %1$d ok, %2$d failed.</string>
+    <string name="msg_vpn_denied">VPN permission was not granted.</string>
+    <string name="msg_file_error">Could not read file: %1$s</string>
+    <string name="msg_invalid_config">Invalid configuration: %1$s</string>
+    <string name="err_fetch">Download failed: %1$s</string>
+    <string name="err_sub_empty">The subscription contained no supported configurations.</string>
+
+    <string name="err_no_profile">No configuration selected.</string>
+    <string name="err_vpn_permission">VPN permission was revoked or not granted.</string>
+    <string name="err_core_missing">The Xray core (libv2ray.aar) is missing from this build.</string>
+    <string name="err_native_missing">The tunnel library (hev-socks5-tunnel) is missing from this build.</string>
+    <string name="err_core_stopped">The Xray core stopped right after starting. Check the configuration.</string>
+
+    <string name="scan_hint">Point the camera at a QR code</string>
+    <string name="scan_denied">Camera permission is required to scan QR codes.</string>
+</resources>
